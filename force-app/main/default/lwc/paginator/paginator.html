@@ -1,0 +1,19 @@
+<template>
+    <lightning-layout class="slds-clearfix" vertical-align="end" pull-to-boundary="medium">
+        <lightning-layout-item class="slds-float_left">
+            Page: {showCurrentPage} of {showTotalPages} <br/>
+            <lightning-button-group>
+                <lightning-button label="First" icon-name="utility:chevronleft" onclick={handleFirst}
+                disabled={showFirstButton} class="slds-show_medium"></lightning-button>
+                <lightning-button label="Previous" icon-name="utility:chevronleft" onclick={handlePrevious}
+                disabled={showFirstButton}></lightning-button>
+                <lightning-button label="Next" icon-name="utility:chevronright" icon-position="right" onclick={handleNext}
+                disabled={showLastButton}></lightning-button>
+                <lightning-button label="Last" icon-name="utility:chevronright" icon-position="right" onclick={handleLast}
+                disabled={showLastButton} class="slds-show_medium"></lightning-button>
+            </lightning-button-group>
+        </lightning-layout-item>
+        <lightning-layout-item flexibility="grow"></lightning-layout-item>
+        <lightning-layout-item class="slds-float_right slds-show_medium"></lightning-layout-item>
+    </lightning-layout>
+</template>
