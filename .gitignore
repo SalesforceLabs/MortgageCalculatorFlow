@@ -29,5 +29,5 @@ $RECYCLE.BIN/
 
 # mdapi convert
 ./mdapioutput/
-./scripts/
+./scripts/*
  
