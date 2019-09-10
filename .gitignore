@@ -28,4 +28,6 @@ ehthumbs.db
 $RECYCLE.BIN/
 
 # mdapi convert
-./mdapioutput
+./mdapioutput/
+./scripts/
+ 
