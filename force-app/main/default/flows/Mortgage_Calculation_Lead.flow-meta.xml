@@ -273,22 +273,22 @@
         </connector>
         <fields>
             <name>amortizationSchedule</name>
-            <extensionName>c:mortgageAmortizationScheduleWrapper</extensionName>
+            <extensionName>c:mortgageAmortizationSchedule</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
-                <name>mortgagePrincipal</name>
+                <name>principal</name>
                 <value>
                     <elementReference>mortgagePrincipal</elementReference>
                 </value>
             </inputParameters>
             <inputParameters>
-                <name>mortgageRate</name>
+                <name>rate</name>
                 <value>
                     <elementReference>mortgageRate</elementReference>
                 </value>
             </inputParameters>
             <inputParameters>
-                <name>mortgageYears</name>
+                <name>years</name>
                 <value>
                     <elementReference>mortgageYears</elementReference>
                 </value>
@@ -493,22 +493,22 @@
         </connector>
         <fields>
             <name>mortgageCalculation</name>
-            <extensionName>c:mortgageCalcWrapper</extensionName>
+            <extensionName>c:mortgageCalculator</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
-                <name>mortgagePrincipal</name>
+                <name>initPrincipal</name>
                 <value>
                     <elementReference>mortgagePrincipal</elementReference>
                 </value>
             </inputParameters>
             <inputParameters>
-                <name>mortgageRate</name>
+                <name>initRate</name>
                 <value>
                     <elementReference>mortgageRate</elementReference>
                 </value>
             </inputParameters>
             <inputParameters>
-                <name>mortgageYears</name>
+                <name>initYears</name>
                 <value>
                     <elementReference>mortgageYears</elementReference>
                 </value>
@@ -516,15 +516,15 @@
             <isRequired>true</isRequired>
             <outputParameters>
                 <assignToReference>mortgagePrincipal</assignToReference>
-                <name>mortgagePrincipal</name>
+                <name>initPrincipal</name>
             </outputParameters>
             <outputParameters>
                 <assignToReference>mortgageRate</assignToReference>
-                <name>mortgageRate</name>
+                <name>initRate</name>
             </outputParameters>
             <outputParameters>
                 <assignToReference>mortgageYears</assignToReference>
-                <name>mortgageYears</name>
+                <name>initYears</name>
             </outputParameters>
         </fields>
         <fields>
