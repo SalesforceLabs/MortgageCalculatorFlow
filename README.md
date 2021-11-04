@@ -2,6 +2,9 @@
 
 This is a flow that provides a mortgage payment and amortization calculator with lead generation.
 
+### Deploy
+https://githubsfdeploy.herokuapp.com/app/githubdeploy/mhamzas/MortgageCalculatorFlow
+
 ## Updates
 
 - Removed AURA Components and LWC has Flow support.
