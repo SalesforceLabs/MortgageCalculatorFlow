@@ -1,5 +1,0 @@
-<design:component >
-        <design:attribute name="mortgageRate" label="Mortgage Rate" description="The rate of the mortgage"/>
-        <design:attribute name="mortgageYears" label="Mortgage Years" description="The length of the mortgage"/>
-        <design:attribute name="mortgagePrincipal" label="Mortgage Principal" description="The amount of the mortgage"/>
-</design:component>

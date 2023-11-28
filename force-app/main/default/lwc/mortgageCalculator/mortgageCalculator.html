@@ -1,3 +1,10 @@
+<!--
+  @description       : 
+  @author            : M Hamza Siddiqui
+  @group             : 
+  @last modified on  : 10-29-2021
+  @last modified by  : M Hamza Siddiqui
+-->
 <template>
         <lightning-card title="Mortgage Calculator" icon-name="custom:custom62">
             <div class="input">
@@ -8,14 +15,13 @@
                     value={defaultPrincipal}
                     onchange={handlePrincipalChange}>
                 </lightning-input>
-                <lightning-combobox
-                    name="select1"
+                <lightning-input
+                    id="years"
+                    type="number"
                     label="Years:"
-                    required
-                    onchange={handleYearChange}
-                    options={yearOptions}
-                    value="30">
-                </lightning-combobox>
+                    value={defaultYear}
+                    onchange={handleYearChange}>
+                </lightning-input>
                 <lightning-input
                     id="rate"
                     type="text"
@@ -24,14 +30,17 @@
                     onchange={handleRateChange}>
                 </lightning-input>
             </div>
-            <div class="result">
-                Monthly Payment: 
-                <lightning-formatted-number
-                    value={monthlyPayment}
-                    format-style="currency"
-                    currency-code="USD">
-                </lightning-formatted-number>
-            </div>
+            <template if:true={monthlyPayment}>
+                <div class="result">
+                    Monthly Payment: 
+                    <lightning-formatted-number
+                        value={monthlyPayment}
+                        format-style="currency"
+                        currency-code="USD">
+                    </lightning-formatted-number>
+                
+                </div>
+            </template>
 
            <!-- Default Principle: {initPrincipal}<br/>
             Default Rate: {initRate}<br/>
